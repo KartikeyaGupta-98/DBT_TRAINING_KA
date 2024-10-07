@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: DBT_SOURCES
+    database: HOCKEYDB
+    schema: HOCKEY
+    tables:
+      - name: MASTER
+      - name: TEAMS

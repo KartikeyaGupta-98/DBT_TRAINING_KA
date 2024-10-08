@@ -4,8 +4,8 @@
             target_schema='DBT_KALAPATI',
             target_database='TRAINING',
             unique_key='PLAYERID',
-            strategy='check',
-            check_cols=['FIRSTNAME']
+            strategy='timestamp',
+            updated_at='updated_at'
         )
     }}
 

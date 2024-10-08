@@ -1,8 +1,8 @@
 {{
     config(
         materialized='incremental',
-        unique_key=''
+        unique_key='SNo'
     )
 }}
 
-select * from HOCKEYDB.HOCKEY.COACHES
+select row_number() as SNo from HOCKEYDB.HOCKEY.COACHES

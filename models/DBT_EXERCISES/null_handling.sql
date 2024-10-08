@@ -4,8 +4,9 @@
     )
 }}
 
-select COALESCE(playerid, 'SYS') as playerid, 
-COALESCE(year, 1999) as year,
-COALESCE(POS, 'SYS') as POS,
-COALESCE(GP, 0) as GP,
-* from {{ ref('SCORING_MODEL') }}
+select
+COALESCE(PLAYERID, 'SYS') AS PLAYERID,  
+    COALESCE(YEAR, 1999) AS YEAR,                  
+    COALESCE(POS, 'SYS') AS POS,            
+    COALESCE(GP, 0) AS GP
+from {{ source('DBT_SOURCES', 'SCORING') }}

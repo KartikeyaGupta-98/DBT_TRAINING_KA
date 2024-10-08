@@ -3,12 +3,11 @@
         config(
             target_schema='DBT_KALAPATI',
             target_database='TRAINING',
-            unique_key='PLAYERID',
+            unique_key='ID',
             strategy='timestamp',
-            updated_at='updated_at'
+            updated_at='HIRE_DATE'
         )
     }}
 
-    --select * from {{ source('DBT_SOURCES', 'MASTER') }}
-    select * from {{ ref('SNAP_MASTER') }}
+    select * from {{ ref('SNAPSHOT_TIME_SAMPLE') }}
  {% endsnapshot %}

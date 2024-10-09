@@ -7,6 +7,8 @@ sources:
     tables:
       - name: MASTER
       - name: TEAMS
+        description: "Source table containing team information."
 
       - name : SCORING
       - name : COACHES
+        description: "Target table containing model coaches data for reconciliation."

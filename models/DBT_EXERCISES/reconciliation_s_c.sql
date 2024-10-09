@@ -7,7 +7,7 @@ with source_data as (
     select 
         count(*) as source_count,
         sum(YEAR) as total_source_amount
-    from {{ source('DBT_SOURCES', 'TEAMS') }}
+    from {{ source('DBT_SOURCES', 'COACHES') }}
 ),
 
 target_data as (

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: reconciliation_s_c
+    columns:
+      - name: reconciliation_status
+        tests:
+          - r_test_status  
+
+
+
+        
+          

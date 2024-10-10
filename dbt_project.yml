@@ -42,4 +42,10 @@ models:
       +materialized: table
 
 
+vars:
+  min_value: 20
+  max_value: 30
+
+
+
 

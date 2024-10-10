@@ -1,0 +1,10 @@
+version: 2
+models:
+    - name: null_handling 
+      description: "This model performs has contains the data of COACHES table "
+      columns:
+          - name: playerid
+            description: "it defines the unique_id column in master table"
+          - name: year
+            description: "it defines which player scored on which year"
+          

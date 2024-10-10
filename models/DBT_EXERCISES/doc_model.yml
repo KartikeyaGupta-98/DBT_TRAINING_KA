@@ -1,10 +1,10 @@
 version: 2
 models:
-    - name: SNAP_MASTER 
-      description: "This model performs has contains the data of MASTER table "
+    - name: null_handling 
+      description: "This model performs has contains the data of COACHES table "
       columns:
-          - name: PLAYERID
+          - name: playerid
             description: "it defines the unique_id column in master table"
-          - name: YEAR
+          - name: year
             description: "it defines which player scored on which year"
           

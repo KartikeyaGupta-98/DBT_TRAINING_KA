@@ -1,16 +1,16 @@
 version: 2
 
-models:
-  - name: SCORING_MODEL
-    columns:
-      - name: YEAR
-        tests:
-          - Test_count 
-  - name: reconciliation_s_c
-    columns:
-      - name: reconciliation_status
-        tests:
-          - r_test_status  
+  models:
+    - name: SCORING_MODEL
+      columns:
+        - name: YEAR
+          tests:
+            - Test_count 
+    - name: reconciliation_s_c
+      columns:
+        - name: reconciliation_status
+          tests:
+            - r_test_status  
 
 
 
